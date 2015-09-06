@@ -1,0 +1,60 @@
+/*Style sheet
+Hans He
+*/
+
+
+$scarlet: #CD533B;
+$turqoise: #19323C;
+$light-blue: #9FFFCB;
+$light-green: #9FD356;
+$ocean-green: #294739;
+$grey: #F0F0F0;
+
+$wallpaper: "../images/215H.jpg";
+
+
+body{
+	font: Verdana, sans-serif;
+	margin: 0px;
+
+}
+
+div {
+	
+}
+
+h1 {
+	
+	font-family: Verdana;
+	font-weight: normal;
+	font-size: 40px;
+
+}
+
+p {
+	
+	font-size: 17px;
+	font-weight: normal;
+
+
+}
+
+.head-div {
+
+	height: 600px;	
+	background-image: url($wallpaper);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+
+}
+
+.center {
+	width: 50%;
+	margin-left:auto;
+	margin-right:auto;
+	text-align: center;
+	font: Helvetica;
+
+}
+

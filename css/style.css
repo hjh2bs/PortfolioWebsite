@@ -1,0 +1,31 @@
+/*Style sheet
+Hans He
+*/
+body {
+  font: Verdana, sans-serif;
+  margin: 0px; }
+
+h1 {
+  font-family: Verdana;
+  font-weight: normal;
+  font-size: 40px; }
+
+p {
+  font-size: 17px;
+  font-weight: normal; }
+
+.head-div {
+  height: 600px;
+  background-image: url("../images/215H.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center; }
+
+.center {
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  font: Helvetica; }
+
+/*# sourceMappingURL=style.css.map */
