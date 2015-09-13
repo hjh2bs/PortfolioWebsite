@@ -57,7 +57,11 @@ div {
 
 .img-circle {
   border-radius: 50%;
-  width: 100px;
-  height: 150px; }
+  width: 220px;
+  height: 250px;
+  margin-top: 1%;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.8);
+  -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, 0.8);
+  -moz-box-shadow: 0 0 8px rgba(0, 0, 0, 0.8); }
 
 /*# sourceMappingURL=style.css.map */
