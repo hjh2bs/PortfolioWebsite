@@ -2,17 +2,25 @@
 Hans He
 */
 body {
-  font: Verdana, sans-serif;
-  margin: 0px; }
+  font: Calibri;
+  margin: 0px;
+  background: #F0F0F0; }
 
-h1 {
-  font-family: Verdana;
-  font-weight: normal;
-  font-size: 40px; }
-
-p {
-  font-size: 17px;
-  font-weight: normal; }
+div {
+  min-width: 900px; }
+  div h1, div p, div a {
+    font-family: Calibri;
+    font-weight: normal;
+    font-size: 40px; }
+  div p, div a {
+    font-size: 17px; }
+  div a {
+    font-size: 25px;
+    display: inline-block;
+    padding: 30px;
+    color: #999999; }
+  div a:hover {
+    color: #000000; }
 
 .head-div {
   height: 600px;
@@ -21,11 +29,35 @@ p {
   background-repeat: no-repeat;
   background-position: center; }
 
-.center {
+.center, #navbg {
   width: 50%;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
-  font: Helvetica; }
+  font: Calibri; }
+
+#headtitle {
+  color: #F0F0F0;
+  font-size: 80px;
+  margin: 0px;
+  height: 50%;
+  padding-top: 30%; }
+
+#navbg {
+  width: 90%; }
+
+#nav {
+  width: 100%; }
+
+#footer {
+  background: #000000;
+  color: #F0F0F0;
+  width: 100%;
+  padding: 20px; }
+
+.img-circle {
+  border-radius: 50%;
+  width: 100px;
+  height: 150px; }
 
 /*# sourceMappingURL=style.css.map */
