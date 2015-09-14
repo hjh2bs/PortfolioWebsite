@@ -18,7 +18,8 @@ div {
     font-size: 25px;
     display: inline-block;
     padding: 30px;
-    color: #999999; }
+    color: #999999;
+    text-decoration: none; }
   div a:hover {
     color: #000000; }
 
