@@ -36,7 +36,6 @@ div {
 	p {
 		@extend h1;
 		font-size: 17px;
-	
 	}
 
 	a {
@@ -105,6 +104,9 @@ div {
 	color: $grey;
 	width: 100%;
 	padding: 20px;
+	bottom:0;
+	position:absolute;
+
 
 }
 

@@ -54,7 +54,9 @@ div {
   background: #000000;
   color: #F0F0F0;
   width: 100%;
-  padding: 20px; }
+  padding: 20px;
+  bottom: 0;
+  position: absolute; }
 
 .img-circle {
   border-radius: 50%;
