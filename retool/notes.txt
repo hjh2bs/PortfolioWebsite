@@ -1,0 +1,17 @@
+Notes
+Hans He
+Portfolio Website
+
+
+Installing SASS:
+
+	Install Ruby with ruby installer
+		Use Windows installer
+	For SSL error (run on cmd.exe NOT git bash):
+		gem source -a http://rubygems.org/
+	gem install sass
+	sass -v to check for version
+
+Using SASS:
+	
+	sass --watch (.scss file):(.css file)

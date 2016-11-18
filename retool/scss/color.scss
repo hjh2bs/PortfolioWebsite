@@ -1,0 +1,118 @@
+/*Style sheet
+Hans He
+11/5/2016
+*/
+
+$grey: #F0EFF4;
+$dark-grey: #616163;
+$wild-green: #44FFD2;
+$sky-blue: #87F6FF;
+$dream-blue: #88D9E6;
+$scarlet: #FFBFA0; 
+$velvet: #8B8BAE;
+$smoke-blue: #374B4A;
+$smoke: #526760;
+
+$font: Tahoma, Verdana, Segoe, sans-serif;
+
+/*mixins*/
+
+@mixin bar-dimensions{
+	width: 100%;
+	height: 7%;
+	background: $grey;
+	position: absolute;
+}
+
+@mixin min-size{
+	min-width: 900px;
+}
+
+/*body*/
+body{
+	margin:0px;
+}
+
+/*CSS for top bar*/
+#headband{
+	@include bar-dimensions;
+	@include min-size;
+	display: table;
+	top: 0;
+	text-align: center;
+}
+
+#head-text{
+	display: table-cell;
+	vertical-align: middle;
+	font-family: $font;
+	min-height: 100%;
+	min-width: 100%;
+}
+
+#head-icon{
+	
+	height:2.5%;
+	width:1%;
+	max-height: 100%;
+	max-width: 100%;
+
+}
+/*CSS for bottom bar*/
+
+#bottom{
+	@include bar-dimensions;
+	@include min-size;
+	bottom: 0;
+}
+
+/*CSS for grid*/
+
+#grid{
+	@include min-size;
+	height:86%;
+	width:100%;
+	position: absolute;
+	top: 7%;
+}
+
+.block{
+	float: left;
+	height:50%;
+	width:25%;
+	margin: 0px;
+}
+
+#g1{background: $dark-grey;}
+#g2{background: $wild-green;}
+#g3{background: $sky-blue;}
+#g4{background: $dream-blue;}
+#g5{background: $scarlet;}
+#g6{background: $smoke-blue;}
+#g7{background: $velvet;}
+#g8{background: $smoke;}
+
+.hovercontent{
+	background: #222222;
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+	z-index:5;
+	text-align: center;
+	-webkit-transition: opacity 0.2s ease-out, -webkit-transform 0.2s ease-in-out;
+	-webkit-transform: scale3d(1.05, 1, 1) translate3d(0, 1%, 0);
+}
+
+.block:hover .hovercontent {
+	opacity: .75;
+	-webkit-transform: scale3d(1, 1, 1) translate3d(0, 0, 0);
+}
+
+.hovercontent h2{
+	color: white;
+	font-family: $font;
+	font-size: 1.5em;
+	margin-top: 0;
+	padding-top: 40%;
+	font-weight:100;
+}
