@@ -1,0 +1,318 @@
+/*Style sheet
+Hans He
+01/08/2017
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Space+Mono');
+@import url('https://fonts.googleapis.com/css?family=Dosis|Roboto+Condensed:300|Source+Sans+Pro');
+
+/*variables*/
+
+$vanilla: #efefef;
+$black: #0d0d00;
+$grey: #696969;
+
+$Dosis: Dosis, sans-serif; 
+$Space: 'Space Mono', monospace;
+
+/*mixins*/
+
+@mixin painting{
+	min-height: 750px;
+	position: relative;
+ 	margin: 0 auto;
+ 	width: 100%;
+ 	max-width: 1920px;
+ 	height:750px;
+ 	background-size:100% 100%;
+ 	justify-content: center;
+  	align-items: center;
+}
+
+@mixin paper{
+	min-height: 450px;
+	position: relative;
+ 	margin: 0 auto;
+ 	width: 100%;
+ 	max-width: 1920px;
+ 	height:450px;
+ 	background-color: $vanilla;
+ 	justify-content: center;
+  	align-items: center;
+}
+
+@mixin words{
+	color: $black;
+	font-family: $Space;
+}
+
+body, html{
+	margin: 0;
+	padding: 0;
+	min-width: 100%;
+	overflow-x:hidden;
+	background-color:$vanilla
+}
+
+strong{
+	font-size: 20px;
+}
+hr{
+	margin:0;
+	margin-left:12%;
+	width:75%;
+	height:2px;
+	color:$black;
+	background-color:$black;
+	
+}
+
+
+.header{
+	width:100%;
+    height:60px;
+    background-color:rgba(255,127,80,0);
+    position: fixed;
+    z-index: 10;
+    -webkit-transition: background-color 0.5s ease-in-out;
+}
+
+.header a {
+	@include words;
+	text-decoration: none;
+    padding-right:30px;
+    size: 40px;       
+	-webkit-transition: color 0.2s ease-out;
+}
+
+.header a:hover {
+	color: $grey;
+	-webkit-transition: color 0.2s ease-out;
+}
+
+.header p{
+    font-size: 21px;
+    float: right;
+    margin:0;
+    padding-top:15px;
+}
+
+
+.header-scrolled {
+	background-color: rgba(239, 239, 239, .7);
+	-webkit-transition: background-color 0.5s ease-out;
+}
+
+.banner{
+	margin:0;
+	padding:0;
+	background-color: $vanilla;
+	width:100%;	
+	height: 100px;
+	text-align:center;
+}
+
+.banner p{
+	@include words;
+	margin:0;
+	font-size: 76px;
+}
+
+
+.painting-1 {
+	@include painting;
+	background: url("img/mystery_woman.jpg") 50% 0 no-repeat fixed;
+	filter: grayscale(100%);
+}
+
+.painting-2 {
+	@include painting;
+	background: url("img/city.jpg") 50% 0 repeat fixed;
+}
+
+.painting-3 {
+	background: url("img/mm3.jpg") 50% 0 no-repeat fixed;
+	@include painting;
+	filter: grayscale(100%);
+}
+
+.exposition {
+	@include paper;
+	margin: 0;
+}
+
+.img-position {
+	top:15%;
+	position: relative;
+	left:10%;
+}
+
+.img-circle {
+  border-radius: 50%;
+  width: 220px;
+  height: 220px;
+  margin-top: 4%;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.8);
+  -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, 0.8);
+  -moz-box-shadow: 0 0 8px rgba(0, 0, 0, 0.8); 
+}
+
+.bio {
+	@include words;
+	text-align: center;
+	top: 20%;
+	position: absolute;
+	margin-left: 30%;
+	margin-right: 20%;
+	min-width: 570px;
+}
+
+.bio h1 {
+	margin: 0;
+	font-size: 76px;
+}
+
+.mytd-img {
+	top: 20%;
+	left:10%;
+  	width: 220px;
+  	height: 220px;
+  	position: absolute;
+  	float:left;
+  	-webkit-transition: box-shadow .2s ease-out;
+}
+
+.mytd-img:hover{
+	-webkit-box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.8);
+	-webkit-transition: box-shadow .2s ease-out;
+}
+
+.container{
+	min-width: 570px;
+	width:50%;
+	height:650px;
+	background-color: $vanilla;
+	padding: 5px;
+	position: relative;
+	left: 26%;
+}
+
+.block{
+	position:absolute;
+	top:10%;
+	height:80%;
+	width:100%;
+}
+
+.line{
+	display: inline-block;
+	width:100%;
+	vertical-align: middle;
+	margin-top: 2%
+}
+
+.line p {
+	@include words;
+	margin:0;
+	float:left;
+	font-size: 13px;
+}
+
+.ruler {
+	float:left;
+	margin:0;
+	background-color: $black;
+	position:absolute;
+	margin-top: 8px;
+	margin-left: 105px;
+	width: 2%;
+	height: 5px;
+	-webkit-transition: width 0.2s ease-in-out;
+}
+
+.x-column{
+	background-color: $vanilla;
+	margin-left:95px;
+	margin-top: 30px;
+	min-width:500px;
+}
+
+.x-column p {
+	float:left;
+	font-family: "Space Mono", monospace;
+	font-size: 13px;
+}
+
+.vertical {
+	height:478px;
+	border-left: solid $black;	
+	float:left;
+	margin-top:50px;
+	padding-right:40px;
+}
+
+.project-1{
+	@include words;
+	position: absolute;
+	margin: 0;
+	float:left;
+	top:14%;
+	left:32%;
+	width:20%;
+	min-width:500px;
+}
+
+
+.large {
+	@include words;
+	color:$vanilla;
+	font-size: 106px;
+	height: 458px; 
+  	position: absolute; 
+  	text-align: center; 
+  	width: 100%; 
+  	top: 27%;
+}
+
+.contact-info{
+	position:relative;
+	text-align: center;	
+	top:62%;
+	
+}
+.contact-info p{
+	@include words;
+	margin:0;
+	color:$vanilla;
+	font-size: 16px;
+	width:60%;
+	position: relative;
+	left:20%;
+}
+
+.ghost {
+	position: relative;
+  	display: inline-block;
+  	margin: 1em;
+  	padding: 1em 2em;
+  	border: 0;
+  	border-radius: 30px;
+  	text-align: center;
+  	white-space: nowrap;
+  	cursor: pointer;
+  	font-family: 'Open Sans', sans-serif;
+  	font-size: 14px;
+  	background-color: transparent;
+  	border: 1px solid $vanilla;
+  	color: $vanilla;
+  	-webkit-transition: color 0.2s ease-out;
+  	-webkit-transition: border-color 0.2s ease-out;
+}
+
+.ghost:hover {
+  	border-color: $black;
+  	color: $black;
+  	-webkit-transition: color 0.2s ease-out;
+  	-webkit-transition: border-color 0.2s ease-out;
+}
+

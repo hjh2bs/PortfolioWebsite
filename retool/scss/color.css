@@ -52,8 +52,10 @@ body {
   float: left;
   height: 50%;
   width: 25%;
-  margin: 0px;
-  overflow: hidden; }
+  overflow: hidden;
+  z-index: 4;
+  transition: width 0.5s, height 0.5s, left 0.5s, top 0.5s;
+  -webkit-transition: width 0.5s, height 0.5s, left 0.5s, top 0.5s; }
 
 #g1 {
   background: #616163; }
@@ -101,5 +103,35 @@ body {
   margin-top: 0;
   padding-top: 40%;
   font-weight: 100; }
+
+#h1info {
+  background: #222222;
+  background: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  height: 50%;
+  width: 25%;
+  opacity: 0;
+  z-index: 0; }
+
+#slide {
+  left: 100%;
+  height: 100%;
+  width: 100%;
+  z-index: 99;
+  -webkit-transition: opacity 0.2s ease-out, -webkit-transform 0.2s ease-in-out;
+  transition: .2s; }
+
+#h1info h2 {
+  color: white;
+  font-family: Tahoma, Verdana, Segoe, sans-serif;
+  font-size: 1.5em;
+  margin-top: 0;
+  padding-top: 40%;
+  font-weight: 100; }
+
+.over {
+  overflow: visible; }
+
+/*Expansions*/
 
 /*# sourceMappingURL=color.css.map */

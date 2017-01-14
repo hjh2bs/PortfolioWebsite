@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css?family=Space+Mono');
+@import url('https://fonts.googleapis.com/css?family=Dosis|Roboto+Condensed:300|Source+Sans+Pro');
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Dosis', sans-serif; 
+  min-width: 1200px;
+}
+
+
+
+.bg-1{
+	background: url("beach2.png") 50% 0 repeat fixed;
+	min-height: 750px;
+	position: relative;
+ 	margin: 0 auto;
+ 	width: 100%;
+ 	max-width: 1920px;
+ 	height:750px;
+ 	background-size:100% 100%;
+ 	justify-content: center;
+  	align-items: center;
+    -webkit-box-shadow: 0 0 50px rgba(0,0,0,0.8);
+ 	box-shadow: 0 0 50px rgba(0,0,0,0.8);
+}
+
+
+
+
+.bg-2{
+	background: url("city.jpg") 50% 0 repeat fixed;
+	min-height: 750px;
+	position: relative;
+ 	margin: 0 auto;
+ 	width: 100%;
+ 	max-width: 1920px;
+ 	height:750px;
+ 	background-size: 100% 100%;
+ 	justify-content: center;
+  align-items: center;
+  -webkit-box-shadow: 0 0 50px rgba(0,0,0,0.8);
+ 	box-shadow: 0 0 50px rgba(0,0,0,0.8);
+
+}
+
+
+
+.bg-3{
+	background: url("stadium.jpg") 50% 0 no-repeat fixed;
+	min-height: 750px;
+	height: 100%; 
+  	margin: 0 auto; 
+ 	width: 100%; 
+  	max-width: 1920px; 
+	position: relative;
+	-webkit-box-shadow: 0 0 50px rgba(0,0,0,0.8);
+ 	box-shadow: 0 0 50px rgba(0,0,0,0.8);
+ 	background-size: 100% 100%;
+
+ 	justify-content: center;
+  	align-items: center;
+
+}
+
+
+
+.bg-4{
+	min-height: 500px;
+	position: relative;
+ 	margin: 0 auto;
+ 	width: 100%;
+ 	max-width: 1920px;
+ 	height:500px;
+ 	background-color: #333333;
+ 	justify-content: center;
+  	align-items: center;
+}
+
+
+.content{
+	height: 458px; 
+  	position: absolute; 
+  	text-align: center; 
+  	width: 100%; 
+  	top: 30%;
+}
+
+.content p{
+	color: #efefef;
+	font-family: 'Dosis', sans-serif;
+    font-size: 106px;
+}
+
+.content-white{
+	height: 458px; 
+  	position: absolute; 
+  	text-align: center; 
+  	width: 100%; 
+  	font-family: 'Dosis', sans-serif; 
+}
+
+
+.content-white h2{
+	font-size: 3vw;
+}	
+
+.bio {
+	color: #efefef;
+	font-family: 'Dosis', sans-serif;
+	text-align: center;
+	top: 20%;
+	position: absolute;
+	margin-left: 30%;
+	margin-right: 20%;
+	min-width: 570px;
+}
+
+.bio h1{
+	margin: 0;
+	font-size: 76px;
+}
+
+
+.ghost{
+  position: relative;
+  display: inline-block;
+  margin: 1em;
+  padding: 1em 2em;
+  border: 0;
+  border-radius: 30px;
+  text-align: center;
+  white-space: nowrap;
+  cursor: pointer;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  background-color: transparent;
+  border: 1px solid #efefef;
+  color: #efefef;
+  -webkit-transition: color 0.2s ease-out;
+  -webkit-transition: border-color 0.2s ease-out;
+}
+
+.ghost:hover {
+  border-color: #000000;
+  color: #000000;
+  -webkit-transition: color 0.2s ease-out;
+  -webkit-transition: border-color 0.2s ease-out;
+}
+
+
+.img-circle {
+  border-radius: 50%;
+  width: 220px;
+  height: 220px;
+  margin-top: 4%;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.8);
+  -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, 0.8);
+  -moz-box-shadow: 0 0 8px rgba(0, 0, 0, 0.8); 
+}
+
+.bio-img{
+	top:15%;
+	position: relative;
+	left:10%;
+}
+
+.project{
+	top:10%;
+	position: absolute;
+	color: #efefef;
+	font-family: 'Dosis', sans-serif;
+}
+
+.mytd {
+	top: 20%;
+	width: 220px;
+  height: 220px;
+  position: absolute;
+  float:left;
+  -webkit-transition: box-shadow .2s ease-out;
+}
+
+.mytd:hover{
+	-webkit-box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.8);
+	-webkit-transition: box-shadow .2s ease-out;
+}
+
+
+.project{
+	margin: 0;
+	float:left;
+	top:18%;
+	left:25%;
+	width:20%;
+}
+
+
+.works{
+	
+	margin-left:5%;
+	width:50%;
+}
+
+
+.header{
+    width:100%;
+    height:60px;
+    background-color:rgba(255,127,80,0);
+    position: fixed;
+    z-index: 10;
+    -webkit-transition: background-color 0.5s ease-in-out;
+}
+ 
+.header a {
+    
+    text-decoration: none;
+    padding-right:30px;
+    size: 40px;   
+    color: #efefef;
+	font-family: 'Dosis', sans-serif;       
+	-webkit-transition: color 0.2s ease-out;
+}
+
+.header a:hover {
+
+	color:#F8F8FF;
+	-webkit-transition: color 0.2s ease-out;
+
+}
+
+
+ 
+.header p{
+    font-size: 21px;
+    float: right;
+    margin:0;
+    padding-top:15px;
+}
+
+
+.header-scrolled {
+
+	background-color:rgba(255,127,80,.5);
+	-webkit-transition: background-color 0.5s ease-out;
+
+}
+
+
+.p2{
+
+	position:relative;
+	top:62%;
+	text-align: center;	
+}
+.p2 p{
+	font-size: 16px;
+	color: #efefef;
+	font-family: 'Dosis', sans-serif;
+	margin:0;
+	
+
+}

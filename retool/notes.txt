@@ -2,6 +2,15 @@ Notes
 Hans He
 Portfolio Website
 
+Design Workflow:
+https://www.smashingmagazine.com/2013/06/workflow-design-develop-modern-portfolio-website/
+
+http://codepen.io/surjithctly/pen/pLDwe
+http://codepen.io/eehayman/pen/qdGZJr
+http://codepen.io/magnificode/pen/GpqGOm
+http://imgur.com/gallery/26GWw
+
+http://codepen.io/KryptoniteDove/pen/gipuw
 
 Installing SASS:
 
