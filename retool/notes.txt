@@ -24,3 +24,15 @@ Installing SASS:
 Using SASS:
 	
 	sass --watch (.scss file):(.css file)
+
+
+
+Folder Structure:
+
+	css - css folder for website concept in college (2015-2016)
+	experimental - folder for concept ideas post college (2016 Fall)
+	images - image folder for first concepts in college
+	js - javascript folder 
+	prototype - experimenting w/ website features such as bars and parallax
+	retool - concept idea post college using grid layout (2016 Fall)
+	

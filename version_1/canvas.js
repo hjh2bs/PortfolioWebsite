@@ -28,23 +28,9 @@ $(document).ready(function(){
 			//console.log(wS);
 			//console.log(hT+hH-wH);	
 			if(wS > (hT+hH-wH-500)){
-				$('div[data-length]').each(function(){
+				$('dd[data-percentage]').each(function(){
 					var $barObj = $(this);
-					var $barDelay = $barObj.data('delay');
-					var $barlength = $barObj.data('length') + '%';
-					if ($barlength == '0%'){
-						$barlength = '6.5%';
-					}
-				//console.log($barlength);
-				//$barObj.css({width: $barlength, transition: 'width 0.2s ease-in-out'});
-					$barObj.delay($barDelay).animate({
-						width: $barlength,
-					}, 
-					{
-						duration: 400,
-						easing: 'swing'
-					});
-
+					$barObj.toggleClass('grow');
 				});
 				$flag=false
 			}

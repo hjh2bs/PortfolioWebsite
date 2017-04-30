@@ -57,24 +57,23 @@ body{
 	-webkit-transition: width 0.2s ease-in-out;
 }
 
-.x-column{
-	background-color: #efefef;
-	margin-left:95px;
-	margin-top: 30px;
-	min-width:500px;
-}
+.x-column {
+  background-color: #efefef;
+  margin-left: 95px;
+  margin-top: 30px;
+  min-width: 500px; }
 
 .x-column p {
-	float:left;
-	font-family: "Space Mono", monospace;
-	font-size: 13px;
-	padding-right:40px;
-}
-/*
+  float: left;
+  font-family: "Space Mono", monospace;
+  font-size: 13px; }
+
 .vertical {
-	height:478px;
-	border-left: solid #000000;	
-	float:left;
-	margin-top:48px;
-	padding-right:40px;
-}
+  height: 478px;
+  border-left: solid #0d0d00;
+  float: left;
+  margin-top: 50px;
+  padding-right: 40px; }
+
+
+
