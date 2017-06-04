@@ -30,12 +30,14 @@ $Space: 'Space Mono', monospace;
 }
 
 @mixin paper{
-	min-height: 450px;
+	min-height: 350px;
 	position: relative;
- 	margin: 0 auto;
+ 	margin-left: auto;
+  margin-right: auto;
  	width: 100%;
  	max-width: 1920px;
- 	height:450px;
+  min-width: 1100px;
+ 	height: 350px;
  	background-color: $vanilla;
  	justify-content: center;
   	align-items: center;
@@ -141,6 +143,21 @@ hr{
 	margin: 0;
 }
 
+.exposition-2 {
+  min-height: 300px;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  max-width: 1920px;
+  min-width: 1100px;
+  height:300px;
+  background-color: $vanilla;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+
 .img-position {
 	top:15%;
 	position: relative;
@@ -186,6 +203,22 @@ hr{
 	-webkit-box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.8);
 	-webkit-transition: box-shadow .2s ease-out;
 }
+
+.mytd-img-2 {
+  top: 6%;
+  left:10%;
+    width: 220px;
+    height: 220px;
+    position: absolute;
+    float:left;
+    -webkit-transition: box-shadow .2s ease-out;
+}
+
+.mytd-img-2:hover{
+  -webkit-box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.8);
+  -webkit-transition: box-shadow .2s ease-out;
+}
+
 /*Skills Section */
 .container{
 	min-width: 570px;
@@ -194,7 +227,7 @@ hr{
 	background-color: $vanilla;
 	padding: 5px;
 	position: relative;
-	left: 15%;
+	margin: 0 auto;
 }
 
 
@@ -294,6 +327,17 @@ dt {
 	left:32%;
 	width:20%;
 	min-width:500px;
+}
+
+.project-2{
+  @include words;
+  position: absolute;
+  margin: 0;
+  float:left;
+  top:0%;
+  left:32%;
+  width:20%;
+  min-width:500px;
 }
 
 

@@ -1,0 +1,17 @@
+body{
+	margin:0;
+}
+.s5{
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	margin: auto;
+	background-color: #efefef;
+	z-index: 3;
+	transition: all 500ms cubic-bezier(1.000, -0.250, 0.065, 1.255);
+	overflow: scroll;
+}
+
+#p1{
+	margin:0 auto;
+}

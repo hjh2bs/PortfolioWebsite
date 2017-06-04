@@ -12,6 +12,12 @@ http://imgur.com/gallery/26GWw
 
 http://codepen.io/KryptoniteDove/pen/gipuw
 
+Graph Design:
+https://css-tricks.com/making-charts-with-css/
+
+Vertical Slide Design:
+http://codepen.io/joseluisq/pen/bwAkn
+
 Installing SASS:
 
 	Install Ruby with ruby installer
